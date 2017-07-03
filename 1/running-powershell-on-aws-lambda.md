@@ -16,6 +16,30 @@ have made PowerShell the primary vehicle for their administration, both [on-prem
 And I should make special mention, especially befitting to this article, the excellent
 support for managing all things AWS with the [`AWSPowerShell` module](http://docs.aws.amazon.com/powershell/latest/userguide/pstools-getting-set-up.html).
 
+
+### Why Serverless?
+
+### Why AWS Lambda?
+
+Support for PowerShell on a Serverless (or FaaS) platform already exists in Azure, so why
+reproduce this in AWS?  Simple, if your infrastructure is already hosted in AWS, then it
+make sense to host infrastructure management and suppot there as well.  Especially when
+you consider the special integrations and support that Lambda provides for private
+networking (VPC) and security (IAM), running PowerShell tasks on Lambda gives you
+special support to automate!
+
+### Why?  Because you can!
+
+This exercise attempts to put together a number of well-established, as well as still
+evovling, tools and techniques to prove you can do something that probably would have
+been unthinkable just a short couple of years ago.
+
+It brings together technologies from different disciplines and different vendors to
+provide something that could be genuinely useful and gives a hint at what could be
+possible in the future.
+
+## What?
+
 ### Serverless Infrastructure Management
 
 In the traditional approach, you would be executing POSH to manage your infrastructure
